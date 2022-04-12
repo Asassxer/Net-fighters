@@ -1,0 +1,335 @@
+
+@media(min-width: 1024px){
+
+    @font-face {
+        font-family: 'Fredoka';
+        src: url('./Fredoka/Fredoka-Light.ttf');
+    }
+    *{
+        margin:0px;
+        box-sizing: border-box;
+        font-family:'Fredoka', sans-serif;   
+    }
+    /* header*/
+    .tamañoNet{
+        font-size: 40px;
+    }
+    
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;   
+    }
+    
+    
+    .fondoHead{
+    background-color: yellow;
+    }
+    
+    nav{
+        background-color: yellow;
+       
+    }
+    
+    
+    ul li{
+    margin: 10px;
+    background-color: green;
+    padding: 5px 25px;
+    }
+    
+    
+    
+    
+    /* main */
+    /* puedes ponerle fondo si gustas con esta clase , sin embargo no encuentro una imagen todavia que me guste
+    .fondoMain{
+     background-image: url(./imgs/Fondo\ universo.jpg) ;
+     height:800px ;
+    }
+    */
+    .margenTitu{
+        margin: 15px;
+    }
+    
+    .margenImg{
+        margin: 20px;
+    }
+    
+    .margenTexto{
+        margin: 20px;
+    }
+    
+    .tamanoTitu{
+        font-size: 30px;
+    }
+    
+    .justificarTex{
+        text-align: justify;
+    }
+    
+    .texDerecha{
+        text-align: right;
+    }
+    
+    .texIzquierda{
+        text-align: left;
+    }
+    
+    .interlineado{
+    line-height: 1.5;
+    }
+    
+    .setion{
+        margin-bottom: 100px;
+    }
+    
+    /*footer */
+    ul{
+     list-style: none;   
+    }
+    
+    footer{
+        margin-top: 50px;
+        
+    }
+    
+    .backFooter{
+        background-color: yellow;
+    }
+    
+    
+    /* si quieres ver el fondo usa estas clases
+    .textoColor{
+     color:white;
+    }
+    */
+    
+     /* flex de la pagina */
+    
+     .nav-flex{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: flex-end; /* trabaja en e eje de la caja o elementos*/
+     }
+    
+     .foo-flex{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;  /* trabaja en el eje invertido de la caja o elementos*/
+        }
+    
+    .align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* grid */
+       #grid-area{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza cabeza"
+        "menu menu menu"
+        "somos que que"
+        "pie pie pie"
+         ;
+         grid-template-columns: 50% 50% ;
+         grid-template-rows: 1fr 1fr 4fr 1fr;
+    }
+    /* grid nombres */
+    
+    header{
+        grid-area: cabeza;
+    }
+    
+    nav{
+        grid-area: menu;
+        
+    }
+    #quienes{
+        grid-area: somos;
+       
+    }
+    #hacemos{
+        grid-area: que;
+    }
+    footer{
+        grid-area: pie;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+
+    @font-face {
+        font-family: 'Fredoka';
+        src: url('./Fredoka/Fredoka-Light.ttf');
+    }
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family:'Fredoka', sans-serif;   
+    }
+    /* header*/
+    .tamanoNet{
+        font-size: 40px;
+    }
+    
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;   
+    }
+    
+    
+    .fondoHead{
+    background-color: yellow;
+    }
+    
+    nav{
+        background-color: yellow;
+       
+    }
+    
+    
+    ul li{
+    margin: 10px;
+    background-color: green;
+    padding: 5px 25px;
+    }
+    
+    
+    
+    
+    /* main */
+    /* puedes ponerle fondo si gustas con esta clase , sin embargo no encuentro una imagen todavia que me guste
+    .fondoMain{
+     background-image: url(./imgs/Fondo\ universo.jpg) ;
+     height:800px ;
+    }
+    */
+    .margenTitu{
+        margin: 15px;
+    }
+    
+    .margenImg{
+        margin: 20px;
+    }
+    .tamano{
+        width: 100px;
+    }
+    .margenTexto{
+        margin: 20px;
+    }
+    
+    .tamanoTitu{
+        font-size: 30px;
+    }
+    
+    .justificarTex{
+        text-align: justify;
+    }
+    
+    .texDerecha{
+        text-align: right;
+    }
+    
+    .texIzquierda{
+        text-align: left;
+    }
+    
+    .interlineado{
+    line-height: 1.5;
+    }
+    
+    .setion{
+        margin-bottom: 100px;
+    }
+    
+    /*footer */
+    ul{
+     list-style: none;   
+    }
+    
+    footer{
+        margin-top: 50px;
+        
+    }
+    
+    .backFooter{
+        background-color: yellow;
+    }
+    
+    
+    /* si quieres ver el fondo usa estas clases
+    .textoColor{
+     color:white;
+    }
+    */
+    
+     /* flex de la pagina */
+    
+     
+     }
+    
+     .foo-flex{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;  /* trabaja en el eje invertido de la caja o elementos*/
+        }
+    
+    .align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* grid */
+       #grid-area{
+        display: grid;
+        grid-template-areas:
+        "cabeza "
+        "menu "
+        "somos"
+        "que"
+        "pie"
+         ;
+         grid-template-columns: 100% ;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    /* grid nombres */
+    
+    header{
+        grid-area: cabeza;
+    }
+    
+    nav{
+        grid-area: menu;
+        
+       
+    }
+    #quienes{
+        grid-area: somos;
+       
+    }
+    #hacemos{
+        grid-area: que;
+    }
+    footer{
+        grid-area: pie;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+
+
