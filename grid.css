@@ -1,4 +1,3 @@
-
 @media(min-width: 1024px){
 
     @font-face {
@@ -54,6 +53,10 @@
     
     .margenImg{
         margin: 20px;
+    }
+    
+    .margintop{
+        margin-top: 0px;
     }
     
     .margenTexto{
@@ -164,6 +167,55 @@
         height: 100vh;
         width: 100%;
     }
+    /*efectos*/
+/*degradiente*/
+.bcdv{
+    background-image:linear-gradient(yellow 14%,red 100%);
+    }
+    .bcfo{
+        background-image: linear-gradient(red 11%,yellow 89%);
+    }
+    /*transiciones*/
+    .litrans{
+        transition: all 3s;
+    }
+    .litrans:hover{
+        width: 100px;
+        height: 50px;
+        border: solid 5px black;
+    }
+    .litrans1{
+        transition: all 2s;
+        
+    }
+    .litrans1:hover{
+        border: solid 5px black;
+        transform: rotate(45deg) ;
+    }
+    .ilanimation{
+        animation-name: listita;
+        animation-duration: 3s;
+    }
+    .olanimation{
+        animation-name: listota;
+        animation-duration: 3s;
+    }
+    @keyframes listita{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translate(0);
+    }
+    }
+    @keyframes listota{
+        from{
+            transform: translateX(-1000px);
+        }
+        to{
+            transform: translate(0);
+        }
+    }
 }
 
 @media(max-width:480px){
@@ -227,6 +279,9 @@
     }
     .margenTexto{
         margin: 20px;
+    }
+    .margintop{
+        margin-top: 0px;
     }
     
     .tamanoTitu{
@@ -332,4 +387,52 @@
         width: 100%;
     }
 
-
+/*efectos*/
+/*degradiente*/
+.bcdv{
+background-image:linear-gradient(yellow 14%,red 100%);
+}
+.bcfo{
+    background-image: linear-gradient(red 11%,yellow 89%);
+}
+/*transiciones*/
+.litrans{
+    transition: all 3s;
+}
+.litrans:hover{
+    width: 100px;
+    height: 50px;
+    border: solid 5px black;
+}
+.litrans1{
+    transition: all 2s;
+    
+}
+.litrans1:hover{
+    border: solid 5px black;
+    transform: rotate(45deg) ;
+}
+.ilanimation{
+    animation-name: listita;
+    animation-duration: 3s;
+}
+.olanimation{
+    animation-name: listota;
+    animation-duration: 3s;
+}
+@keyframes listita{
+from{
+    transform: translateY(-1000px);
+}
+to{
+    transform: translate(0);
+}
+}
+@keyframes listota{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
